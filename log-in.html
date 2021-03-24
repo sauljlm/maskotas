@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/helpers/variables.css">
+		<link rel="stylesheet" href="css/helpers/reset.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/form-user.css">
+		<link rel="stylesheet" href="css/pages/log-in.css">
+		<title>+Kotas</title>
+</head>
+
+<body>
+    <header>
+        <input id="nav-toggle" type="checkbox">
+        <a href="#" class="logo">Logo</a>
+
+        <ul class="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proveedores</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Solicitudes</a></li>
+            <li><a href="#">Peticiones</a></li>
+            <li><a href="#">Peso</a></li>
+        </ul>
+      
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </header>
+    <main>
+		<div class="wrapper">
+			<section class="left-banner">
+				<p>Bienvenido de nuevo</p>
+			</section>
+			<section class="user-handler">
+				<form class="form" id="form">
+                    <h1>Iniciar sesion</h1>
+                    <div class="form__item-container">
+                        <label for="txt-nombre">Correo electrónico:</label>
+                        <input type="text" name="name" class="form__item" id="log-in-email">
+                    </div>
+            
+                    <div class="form__item-container">
+                        <label for="password">contraseña:</label>
+                        <input type="password" name="password" class="form__item" id="log-in-password">
+                    </div>
+
+                    <div class="form__button-container">
+                        <button type="submit" class="form__button" id="submit-button">
+                            Ingresar
+                        </button>
+
+                        <a href="register-password.html">Olvidaste tu contraseña?</a>
+                    </div>
+				</form>
+			</section>
+		</div>
+	</main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/singleton.js"></script>
+    <script src="js/log-in.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/helpers/variables.css">
+    <link rel="stylesheet" href="css/helpers/reset.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/form-user.css">
+    <link rel="stylesheet" href="css/pages/sign-up.css">
+    <title>+Kotas</title>
+</head>
+
+<body>
+	<header>
+		<input id="nav-toggle" type="checkbox">
+		<a href="#" class="logo">+Kotas</a>
+
+		<ul class="navigation">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Proveedores</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li><a href="#">Solicitudes</a></li>
+			<li><a href="#">Configuraciones</a></li>
+		</ul>
+
+		<div class="search">
+			<input type="text" placeholder="Search">
+			<i class="fa fa-search" aria-hidden="true"></i>
+		</div>
+
+		<label for="nav-toggle" class="icon-burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+	</header>
+    <main>
+		<div class="wrapper">
+			<section class="left-banner">
+				<p>Bienvenido</p>
+			</section>
+			<section class="user-handler">
+                <h1 id="sign-up-header">Registrarse</h1>
+				<form class="form" id="form">
+                    <div class="form__slider form__slider--active js-form-slider">
+                        <h2 class="form__slider-title">Elige un tipo de usuario</h2>
+                        <div class="choose-user-container">
+                            <div class="choose-user js-choose-user">
+                                <img src="https://res.cloudinary.com/dsvvkstfe/image/upload/v1616567168/Sign-up/dog-in-front-of-a-man_vtuxpj.png">
+                                <p>Dueño de mascota</p>
+                            </div>
+                            <div class="choose-user js-choose-user">
+                                <img src="https://res.cloudinary.com/dsvvkstfe/image/upload/v1616567168/Sign-up/tienda-de-mercado_fdpyxs.png">
+                                <p>Proveedor de servicio</p>
+                            </div>
+                        </div>
+                        <div class="form__button-container">
+							<button type="button" class="form__button js-btn-continue">
+								Continuar
+							</button>
+
+							<a href="/log-in.html">Ya estás registrado?</a>
+						</div>
+                    </div>
+					<div class="form__slider js-form-slider">
+						<div class="form__item-container">
+							<label for="txt-nombre">Nombre completo:</label>
+							<input type="text" name="name" class="form__item" id="txt-name">
+						</div>
+	
+						<div class="form__item-container">
+							<label for="slt-tipo-id">Tipo de identificación</label>
+							<select class="form__item" name="tipo-id" id="slt-id-type">
+								<option value="">--Seleccione una opción--</option>
+								<option value="Cedula">Cédula</option>
+								<option value="Dimex">Dimex</option>
+								<option value="Otro">Otro</option>
+							</select>
+						</div>
+	
+						<div class="form__item-container">
+							<label for="num-id">Número identificacion:</label>
+							<input name="id" type="number" class="form__item" id="num-id">
+						</div>
+	
+						<div class="form__item-container">
+							<label for="txt-correo">Correo:</label>
+							<input name="email" type="email" class="form__item" id="txt-email" placeholder="micorreo@gmail.com">
+						</div>
+	
+						<div class="form__item-container">
+							<label for="slt-sexo">Genero</label>
+							<select class="form__item" name="sex" id="slt-sex">
+								<option value="">--Seleccione una opción--</option>
+								<option value="Femenino">Femenino</option>
+								<option value="Masculino">Masculino</option>
+								<option value="Otro">Otro</option>
+							</select>
+						</div>
+	
+						<div class="form__item-container form__item-dm">
+							<label for="txt-birthdate">Nacimiento:</label>
+							<input name="birthdate" type="date" class="form__item" id="txt-birthdate">
+                        </div>
+
+                        <div class="form__item-container form__item-ps">
+							<label for="txt-business-name">Nombre del negocio:</label>
+							<input name="businessname" type="text" class="form__item" id="txt-business-name">
+                        </div>
+
+                        <div class="form__item-container form__item-ps">
+							<label for="slt-service">Tipo de servicio:</label>
+							<select class="form__item" name="sevicetype" id="slt-service">
+								<option value="">--Seleccione una opción--</option>
+								<option value="alimentos">Alimentos</option>
+								<option value="paseos">Paseos</option>
+								<option value="Peluqueria">Peluqueria</option>
+							</select>
+						</div>
+                        
+                        <div class="form__item-container">
+							<label for="num-phone">Número Telefónico:</label>
+							<input name="phoneNumber" type="number" class="form__item" id="num-phone">
+						</div>
+		
+						<div class="form__button-container">
+							<button type="button" class="form__button js-btn-continue">
+								Continuar
+							</button>
+
+							<a href="/log-in.html">Ya estás registrado?</a>
+						</div>
+					</div>
+					<div class="form__slider js-form-slider">
+						<div class="form__item-container">
+							<label for="slt-province">Provincia</label>
+							<select class="form__item" name="province" id="slt-province">
+								<option value="">--Seleccione una provincia--</option>
+								<option value="1">San José</option>
+								<option value="2">Alajuela</option>
+								<option value="3">Cartago</option>
+								<option value="4">Heredia</option>
+								<option value="5">Guanacaste</option>
+								<option value="6">Puntarenas</option>
+								<option value="7">Limón</option>
+							</select>
+						</div>
+
+						<div class="form__item-container">
+							<label for="slt-cant">Cantón</label>
+							<select class="form__item" name="cant" id="slt-cant">
+								<option value="">--Seleccione un cantón--</option>
+							</select>
+						</div>
+	
+						<div class="form__item-container">
+							<label for="slt-distr">distrito</label>
+							<select class="form__item" name="distr" id="slt-distr">
+								<option value="">--Seleccione un distrito--</option>
+							</select>
+						</div>
+
+						<div class="form__item-container">
+							<label for="txt-location">Dirección detallada</label>
+							<textarea name="direction" class="form__item" id="txt-location" value=""></textarea>
+						</div>
+		
+						<div class="form__button-container">
+							<button type="button" class="form__button js-btn-continue">
+								Continuar
+							</button>
+
+							<a href="/log-in.html">Ya estás registrado?</a>
+						</div>
+					</div>
+					<div class="form__slider js-form-slider">
+                        <div class="form__item-cont-file">
+                            <label for="file">Añadir foto de perfil</label>
+                            <div class="js-form-preview"></div>
+							<input type="file" name="file" id="file">
+						</div>
+						<div class="form__button-container">
+							<button type="submit" class="form__button" id="submit-button">
+								Registrarse
+							</button>
+
+							<a href="/log-in.html">Ya estás registrado?</a>
+						</div>
+                    </div>
+				</form>
+				<ul class="progressbar">
+					<li class="progressbar__item progressbar__item--active js-progressbar__item"></li>
+					<li class="progressbar__item js-progressbar__item"></li>
+                    <li class="progressbar__item js-progressbar__item"></li>
+                    <li class="progressbar__item js-progressbar__item"></li>
+				</ul>
+			</section>
+		</div>
+	</main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/helpers/validate.js"></script>
+    <script src="js/helpers/generatePassword.js"></script>
+    <script src="js/singleton.js"></script>
+	<script src="js/sign-up.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+/* general sign up */
+
+h1 {
+	color: var(--brown);
+	font-size: 36px;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.left-banner {
+	align-items: center;
+	background-color: var(--shadow);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 40%;
+}
+
+.user-handler {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 3% 5%;
+	width: 60%;
+}
+
+.wrapper {
+	display: flex;
+	max-width: 100%;
+}
+
+/* general sign up */
+
+/* progressbar */
+
+.progressbar {
+	display: flex;
+	justify-content: space-around;
+	margin: 5% auto;
+	width: 30%;
+}
+
+.progressbar__item {
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #000;
+	height: 20px;
+	position: relative;
+	width: 20px;
+}
+
+.progressbar__item--active {
+	background-color: var(--green);
+	border: none;
+}
+
+.progressbar__item:after {
+	background: #000;
+	content: '';
+	height: 1px;
+	left: -250%;
+	position: absolute;
+	top: 9px;
+	width: 50px;
+	z-index: -1;
+}
+
+.progressbar__item--active:after {
+	background:var(--green);
+	content: '';
+	height: 2px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+	z-index: -1;
+}
+
+.progressbar__item:first-child:after {
+	content: none; 
+}
+
+/* end progressbar */

@@ -1,0 +1,146 @@
+
+/* general sign up */
+
+h1 {
+	color: var(--brown);
+	font-size: 36px;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.left-banner {
+	align-items: center;
+	background-color: var(--shadow);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 40%;
+}
+
+.form__slider-title {
+	color: var(--brown);
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.user-handler {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow-y: scroll;
+	padding: 10% 5% 0 5%;
+	width: 60%;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+	display: flex;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+/* general sign up */
+
+/* select type */
+
+.choose-user {
+	align-items: center;
+	background-color: var(--gray);
+	border-radius: 50%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 185px;
+	justify-content: center;
+	width: 185px;
+}
+
+.choose-user--active {
+	border-color: #000;
+}
+
+.choose-user img {
+	max-width: 60%;
+}
+
+.choose-user p {
+	position: relative;
+  top: 60px;
+}
+
+.choose-user p:active {
+	text-decoration: underline;
+}
+
+.choose-user-container {
+	display: flex;
+	justify-content: space-around;
+	margin: 50px auto 10% auto;
+	width: 70%;
+}
+
+.form__item-dm,
+.form__item-ps {
+	display: none;
+}
+
+/* end select type */
+
+/* progressbar */
+
+.progressbar {
+	display: flex;
+	justify-content: space-around;
+	margin: 5% auto;
+	width: 30%;
+}
+
+.progressbar__item {
+	background-color: #fff;
+	border-radius: 50%;
+	border: 1px solid #000;
+	height: 20px;
+	position: relative;
+	width: 20px;
+}
+
+.progressbar__item--active {
+	background-color: var(--green);
+	border: none;
+}
+
+.progressbar__item:after {
+	background: #000;
+	content: '';
+	height: 1px;
+	position: absolute;
+	right: 100%;
+	top: 9px;
+	width: 200%;
+	z-index: -1;
+}
+
+.progressbar__item--active:after {
+	background:var(--green);
+	height: 2px;
+	top: 10px;
+}
+
+.progressbar__item:first-child:after {
+	content: none; 
+}
+
+/* end progressbar */
+
+/* profile image preview */
+
+.form__item-preview {
+	background-size: cover;
+	height: 300px;
+	margin: 0 auto;
+	width: 300px;
+}
+
+/* end profile image preview */
